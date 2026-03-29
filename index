@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>เป็นเทรดเดอร์อย่างไรให้อยู่รอดในตลาด</title>
+<meta name="description" content="แนวทางการเป็นเทรดเดอร์ที่อยู่รอดในตลาดการเงิน เน้นการบริหารความเสี่ยง วินัย และจิตวิทยาการลงทุน">
+
+<meta name="robots" content="index, follow">
+
+<style>
+body {
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background:#ffffff;
+  color:#222;
+}
+
+/* Header */
+header {
+  position:sticky;
+  top:0;
+  background:#fff;
+  border-bottom:1px solid #eee;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
+
+nav a {
+  margin-left:15px;
+  text-decoration:none;
+  color:#333;
+  font-size:14px;
+}
+
+/* Hero */
+.hero {
+  text-align:center;
+  padding:80px 20px 60px;
+}
+
+.hero h1 {
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.hero p {
+  color:#666;
+}
+
+.btn {
+  margin-top:20px;
+  display:inline-block;
+  padding:10px 18px;
+  border:1px solid #222;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:14px;
+  transition:0.2s;
+}
+
+.btn:hover {
+  background:#222;
+  color:#fff;
+}
+
+/* Section */
+section {
+  max-width:900px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+h2 {
+  margin-bottom:15px;
+}
+
+/* Card */
+.card {
+  border:1px solid #eee;
+  border-radius:10px;
+  padding:18px;
+  margin-top:15px;
+  cursor:pointer;
+  transition:0.25s;
+}
+
+.card:hover {
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card p {
+  display:none;
+  margin-top:10px;
+  color:#555;
+}
+
+/* Active */
+.card.active p {
+  display:block;
+}
+
+/* Footer */
+footer {
+  text-align:center;
+  padding:30px;
+  border-top:1px solid #eee;
+  color:#888;
+  font-size:13px;
+}
+
+/* Responsive */
+@media(max-width:600px){
+  .hero h1 {
+    font-size:24px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <strong>Trader Insight</strong>
+  <nav>
+    <a href="#guide">แนวทาง</a>
+    <a href="#mindset">Mindset</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+  <h1>เป็นเทรดเดอร์อย่างไรให้อยู่รอดในตลาด</h1>
+  <p>ไม่ใช่แค่กำไร แต่คือการ “อยู่รอด” ในระยะยาว</p>
+  <div class="btn" onclick="scrollToSection('guide')">เริ่มเรียนรู้</div>
+</div>
+
+<!-- Guide -->
+<section id="guide">
+  <h2>หลักสำคัญของการอยู่รอด</h2>
+
+  <div class="card" onclick="toggle(this)">
+    💰 การบริหารความเสี่ยง (Risk Management)
+    <p>
+      สิ่งที่สำคัญที่สุดไม่ใช่กำไร แต่คือการไม่ล้างพอร์ต จำกัดความเสี่ยงต่อการเทรดแต่ละครั้ง
+      เช่น ไม่เสี่ยงเกิน 1-2% ของพอร์ต
+    </p>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    📊 มีระบบการเทรดที่ชัดเจน
+    <p>
+      เทรดเดอร์ที่อยู่รอดต้องมีแผน ไม่ใช่เทรดตามอารมณ์ ต้องรู้ว่าจะเข้าเมื่อไหร่ ออกเมื่อไหร่
+      และยอมรับผลลัพธ์ตามระบบ
+    </p>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    📉 ยอมรับการขาดทุน
+    <p>
+      การขาดทุนเป็นส่วนหนึ่งของเกม คนที่อยู่รอดคือคนที่ “ขาดทุนเป็น” และไม่ปล่อยให้มันบานปลาย
+    </p>
+  </div>
+
+</section>
+
+<!-- Mindset -->
+<section id="mindset">
+  <h2>Mindset ของเทรดเดอร์ที่อยู่รอด</h2>
+
+  <div class="card" onclick="toggle(this)">
+    🧠 วินัยสำคัญกว่าความเก่ง
+    <p>
+      ต่อให้มีกลยุทธ์ดีแค่ไหน ถ้าไม่มีวินัยก็ไม่สามารถทำกำไรระยะยาวได้
+    </p>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    ⏳ คิดระยะยาว
+    <p>
+      ตลาดไม่ได้ให้เงินคุณภายในวันเดียว การอยู่รอดคือการเล่นเกมระยะยาว
+    </p>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    🔄 เรียนรู้และปรับตัว
+    <p>
+      ตลาดเปลี่ยนเสมอ เทรดเดอร์ต้องพัฒนาและปรับกลยุทธ์ตามสถานการณ์
+    </p>
+  </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>ติดต่อ / ติดตาม</h2>
+  <p><a href="about-author.html">WIWAT PHATANASRIRAT</a></p>
+</section>
+
+<footer>
+  © 2026 <a href="/">digitrvx.github.io/blog/</a>
+</footer>
+
+<script>
+function scrollToSection(id){
+  document.getElementById(id).scrollIntoView({
+    behavior:'smooth'
+  });
+}
+
+function toggle(el){
+  el.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
